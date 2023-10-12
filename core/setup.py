@@ -88,7 +88,7 @@ setup(
         "cffi>=1.9,<2.0.0",
         "idna>=2.5,<4",
         "requests<3.0.0",
-        "urllib3~=1.0",
+        "urllib3>=1,<3",
         # ----
     ],
     zip_safe=False,
