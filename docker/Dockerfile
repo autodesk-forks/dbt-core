@@ -11,7 +11,7 @@ ARG build_for=linux/amd64
 ##
 # Please do not upgrade beyond python3.10.7 currently as dbt-spark does not support
 # 3.11py and images do not get made properly
-FROM --platform=$build_for python:3.10.7-slim-bullseye as base
+FROM --platform=$build_for python:3.12.0-slim-bullseye as base
 
 # N.B. The refs updated automagically every release via bumpversion
 # N.B. dbt-postgres is currently found in the core codebase so a value of dbt-core@<some_version> is correct
